@@ -1,0 +1,37 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css"></style>
+    <title>Quarantine2Win</title>
+</head>
+<body style="background:#3E8EDE;">
+
+<style type="text/css">
+body{text-align: center}
+</style>
+
+
+<p style="color:#A0522D; font-size: 2em;">Welcome to Quaratine2Win my Jumbo friends. Just write your thoughts in the box below and press post and you will put it on the website.</p>
+
+<p style="color:#A0522D; font-size: 2em;">Consdiering that I made this in about 15 min you cannot edit once you post something and you cannot remove it just yet.</p>
+
+
+<div id="userInputs"></div>
+<script type="text/javascript">
+    function postTextArea(){
+
+    document.getElementById("userInputs").innerHTML += "</br>" + document.getElementById("userName").value + ":</br>" +  document.getElementById("userText").value + "</br></br>"
+    }
+</script>
+
+
+    <input type="text" id="userName" placeholder="Name">
+    </br>
+    <textarea id = "userText"></textarea>
+    </br>
+    <button type="submit" value="Submit" onclick="postTextArea()">POST</button>
+
+
+</body>
+</html>
